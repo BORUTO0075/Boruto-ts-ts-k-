@@ -6,7 +6,6 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        // Shiptack repo which contains our tools and dependencies
         maven("https://jitpack.io")
     }
 
@@ -37,9 +36,10 @@ subprojects {
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
-        // When running through GitHub workflow, GITHUB_REPOSITORY should contain current repository name
-        // You can modify it to use other git hosting services, like GitLab
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/user/repo")
+        setRepo(
+            System.getenv("GITHUB_REPOSITORY")
+                ?: "https://github.com/user/repo"
+        )
     }
 
     android {
@@ -57,7 +57,9 @@ subprojects {
 
         tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
             compilerOptions {
-                jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8)
+                jvmTarget.set(
+                    org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8
+                )
                 freeCompilerArgs.addAll(
                     "-Xno-call-assertions",
                     "-Xno-param-assertions",
@@ -68,15 +70,12 @@ subprojects {
     }
 
     dependencies {
-        val apk by configurations
         val implementation by configurations
+        val cloudstream by configurations
 
-        // Stubs for all Cloudstream classes
-        apk("com.lagradost:cloudstream3:pre-release")
+        // Stubs for CloudStream classes
+        cloudstream("com.lagradost:cloudstream3:pre-release")
 
-        // These dependencies can include any of those which are added by the app,
-        // but you don't need to include any of them if you don't need them
-        // https://github.com/recloudstream/cloudstream/blob/master/app/build.gradle
         implementation(kotlin("stdlib"))
         implementation("com.github.Blatzar:NiceHttp:0.3.2")
         implementation("org.jsoup:jsoup:1.13.1")
