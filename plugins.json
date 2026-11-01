@@ -1,0 +1,42 @@
+[
+    {
+        "fileHash": "sha256-39f4422a0de43f6e61246e79ada5e6ea8bb5f37b5d6a04372e695c404fb926cb",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/BORUTO0075/Boruto-ts-ts-k-",
+        "fileSize": 2235,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "BORUTO0075"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "ExampleProvider",
+        "description": "Example Provider",
+        "url": "https://raw.githubusercontent.com/BORUTO0075/Boruto-ts-ts-k-/builds/ExampleProvider.cs3",
+        "name": "ExampleProvider"
+    },
+    {
+        "fileHash": "sha256-1f82855249d2fbb2d9aae4364dd6e851c8c7d111c5c24bca1fed57ca0ab68e99",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/BORUTO0075/Boruto-ts-ts-k-",
+        "fileSize": 2783,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Uzumaki"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "Uzumaki",
+        "description": "Uzumaki Repo - Movies and Web Series",
+        "url": "https://raw.githubusercontent.com/BORUTO0075/Boruto-ts-ts-k-/builds/Uzumaki.cs3",
+        "name": "Uzumaki"
+    }
+]
