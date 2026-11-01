@@ -7,3 +7,7 @@ cloudstream {
     tvTypes = listOf("Movie", "TvSeries")
     language = "en"
 }
+
+android {
+    namespace = "com.uzumaki"
+}
