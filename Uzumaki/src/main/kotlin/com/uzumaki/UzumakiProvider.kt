@@ -9,7 +9,7 @@ class UzumakiProvider : MainAPI() {
     override var name = "Uzumaki"
 
     override val hasMainPage = false
-    override val lang = "en"
+    override var lang = "en"
 
     override val supportedTypes = setOf(
         TvType.Movie,
