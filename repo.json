@@ -1,0 +1,8 @@
+{
+  "name": "Uzumaki Repository",
+  "description": "Uzumaki CloudStream extensions",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/BORUTO0075/Boruto-ts-ts-k-/builds/plugins.json"
+  ]
+}
