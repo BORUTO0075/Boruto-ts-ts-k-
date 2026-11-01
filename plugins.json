@@ -20,10 +20,10 @@
         "name": "ExampleProvider"
     },
     {
-        "fileHash": "sha256-cc5885d21520f235184da70a486d584ee138b18a7f881c88b61248049f7abffb",
+        "fileHash": "sha256-dc5af7f18e5a74e8ca7f2fec487bd9a084b1b1b0a11d1cb3141166750d450e62",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/BORUTO0075/Boruto-ts-ts-k-",
-        "fileSize": 3093,
+        "fileSize": 3101,
         "status": 1,
         "language": "en",
         "authors": [
