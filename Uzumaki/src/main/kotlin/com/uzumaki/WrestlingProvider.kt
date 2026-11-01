@@ -4,7 +4,7 @@ import com.lagradost.cloudstream3.*
 
 class WrestlingProvider : MainAPI() {
 
-    override var mainUrl = "https://watchwrestling.ae"
+    override var mainUrl = "https://fibwatch.art/"
     override var name = "Wrestling"
 
     override val hasMainPage = false
